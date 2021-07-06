@@ -1,0 +1,667 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'gothic';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*============================================= Utilities ===========================================*/
+
+/* Bacground Colors */
+
+.lightGray{
+    background-color: #f1f1f4;
+}
+
+.bgBlue{
+    background-color: #293556;
+}
+
+/* Color text */
+
+.cBlack{
+    color: #000;
+}
+
+.cWhite{
+    color: #fff;
+}
+
+/* Containers */
+
+.outerContainer{
+    max-width: 1500px;
+}
+
+.innerContainer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.centerItems{
+    text-align: center;
+}
+.sectionPage{
+    padding: 50px 0 0;
+    position: relative;
+}
+
+
+/* Properties */
+
+.dibMid{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dibTop{
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.dibBottom{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.bgCont{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* fonts */
+
+.gothic{
+    font-family: 'gothic';
+}
+
+.gothicB{
+    font-family: 'gothicB';
+}
+
+.gothicBI{
+    font-family: 'gothicBI';
+}
+
+.gothicCI{
+    font-family: 'gothicCI';
+}
+
+.montserrat{
+    font-family: 'montserrat';
+}
+
+
+
+
+
+
+/*============================================ Home ==================================================*/
+
+
+/* HeaderSite */
+
+#siteHeader{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.topBar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.containerTopBar{
+    padding: 30px 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.siteLogo{
+    float: left;
+    position: relative;
+    top: 0;
+    left: 40px;
+}
+
+.innerLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+.logo{
+    height: 35px;
+    width: 35px;
+    background-image: url(../assets/iconos/logo.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+}
+
+.logoLetters{
+    height: 50px;
+    width: 150px;
+    background-image: url(../assets/iconos/letraslogo.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.innerNav{
+    float: right;
+}
+
+.outerAnchor{
+    margin-left: 20px;
+}
+#burger{
+    display: none;
+}
+
+
+
+/* Hero Section */
+
+.innerContainer.containerHero{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.heroSection{
+    width: 100%;
+    height: 76.5vh;
+    margin: 0;
+    position: relative;
+}
+
+.firstText{
+    margin-left: 5%;
+    margin-top: 115px;
+    z-index: 7;
+    position: relative;
+}
+
+.firstLine{
+    font-size: 70px;
+    line-height: 0.7;
+}
+
+.secondLine{
+    font-size: 53px;
+}
+
+.thirdLine{
+    font-size: 35px;
+    white-space: nowrap;
+    max-width: 50vw;
+    overflow: hidden;
+}
+
+.containerHeroImg{
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.containerHeroImg img{
+    object-fit: contain;
+    object-position: right;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/* SecondSection */
+
+.sectionPage.secondSection{
+    border-bottom: 3px solid rgb(157, 245, 74);
+}
+
+.innerContainer.containerSection{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.containerSection.attentionContainer{
+    align-items: flex-end;
+}
+
+.containerImg{
+    position: relative;
+    width: 50%;
+}
+
+.containerImg img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.hoursCare{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    width: 50%;
+}
+
+.hoursCareText{
+    font-size: 45px;    
+}
+
+.hoursCareText span {
+    display: block;
+}
+
+.containerHours{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+.listHours{
+    display: block;
+    margin: 15px 0;
+    font-size: 30px;
+}
+
+.hoursText{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/* Third Section */
+
+.innerContainer.containerSection.professionContainer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 50px;
+}
+
+.smallContainer{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.professionTitle{
+    font-size: 45px;
+    margin-top: 5px;
+}
+
+.complementProfession{
+    margin: 20px 0 0;
+    font-size: 25px;
+}
+
+.mauroPicture{
+    display: block;
+    width: 250px;
+    margin: 30px auto;
+}
+
+.inquiriesText{
+    font-size: 23px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.inquiriesText:after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 2.5%;
+    width: 95%;
+    height: 2px;
+    background-color: #727272;
+}
+
+.complementProfession.bottomProfessionText{
+    font-size: 33px;
+}
+
+/* Fourth Section */
+
+.fourthSection{
+    z-index: 1;
+}
+
+.serviceTitle{
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.service{
+    width: 33.3%;
+}
+
+.containerImg.serviceImgContainer{
+    width: 100%;
+    display: block;
+}
+
+/* Foruth SectionB */
+
+.fourthSectionB{
+    padding: 200px 0 70px;
+    text-align: center;
+    color: #727272;
+}
+
+.innerTextService{
+    width: 100%;
+}
+
+.extensiveKnowledge{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.complementText{
+    font-size: 25px;
+}
+
+/* FooterSection */
+
+.siteFooter{
+    padding-bottom: 30px;
+}
+
+.anchorLogoFooter{
+    height: 150px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.logoFooter{
+    height: 100%;    
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+    /* Header */
+    .innerNav{
+        display: none;
+    }
+
+    #burger{
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        height: 35px;
+        justify-content: space-around;
+        margin-top: 5px;
+        position: relative;
+        width: 35px;
+    }
+
+    .lineBurger{
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+
+    .siteLogo{
+        left: 0;
+    }
+
+    .innerLogo{
+        flex-direction: row;
+    }
+
+    .logo{
+        margin-right: 10px;
+    }
+    /* Hero Section */
+    .heroSection{
+        padding-top: 0;
+    }
+    .innerContainer.containerHero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../assets/Imagenes/familia-home-1-mobile.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+        position: relative;
+    }
+
+    .innerContainer.containerHero:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .firstText{
+        margin: 0;
+        margin-top: 20px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .thirdLine{
+        white-space: normal;
+        max-width: initial;
+    }
+
+    .containerHeroImg{
+        display: none;
+    }
+
+    /* SecondSection */
+
+    .innerContainer.attentionContainer{
+        flex-direction: column-reverse;        
+    }
+
+    .containerImg{
+        width: 100%;
+    }
+    
+    .hoursCare{
+        width: 100%;
+        text-align: center;
+    }
+
+    .containerHours{
+        margin-top: 30px;
+    }
+
+    .listHours{
+        margin: 20px 0;
+    }
+    
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .heroSection{
+        padding-top: 0;
+    }
+    /* Header */
+    .containerTopBar{
+        padding: 10px 0 0;
+    }
+    
+    .logoLetters{
+        width: 115px;
+    }
+
+
+
+    /* SecondSection */
+
+    
+
+    .hoursCareText{
+        font-size: 35px;
+    }
+
+    .hoursCareText span{
+        font-size: 30px;
+    }
+
+    .listHours{
+        font-size: 25px;
+    }
+
+    .hoursText{
+        font-size: 20px;
+    }
+
+    /* ThirdSection */
+    .professionTitle{
+        font-size: 35px;
+    }
+
+    .complementProfession{
+        font-size: 23px;
+    }
+
+    .complementProfession.bottomProfessionText{
+        font-size: 27px;
+    }
+
+    /* FourthSection */
+    
+    .serviceContainer{
+        flex-direction: column;
+    }
+
+    .serviceTitle{
+        font-size: 35px;
+    }
+
+    .service{
+        width: 100%;
+    }
+
+    /* FourthSectionB */
+    .fourthSectionB{
+        padding: 50px 0;
+    }
+    .extensiveKnowledge{
+        font-size: 30px;
+    }
+
+    .complementText{
+        font-size: 20px;
+    }
+
+    /* Footer Section */
+
+    .anchorLogoFooter{
+        width: 200px;
+        height: 100px;
+    }
+
+   
+
+}
+
+@media only screen and (max-width: 520px){
+    .firstLine{
+        font-size: 55px;
+    }
+
+    .secondLine{
+        font-size: 40px;
+    }
+
+    .thirdLine{
+        font-size: 25px;
+    }
+}
